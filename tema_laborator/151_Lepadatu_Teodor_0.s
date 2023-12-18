@@ -92,6 +92,8 @@ citire:
 	add $1, %eax
 	lea a, %esi            #dupa citire, pozitia pe care vreau sa pun e (i+1)m+j+1
 	movl $1, (%esi, %eax, 4)
+ 	lea nou, %edi
+	movl $1, (%edi, %eax, 4)
 	#pusha
 	#pushl %eax
 	#pushl $formatprintf
