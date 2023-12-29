@@ -32,7 +32,7 @@ c: .long 0    #citirea curenta
 formatprintf: .asciz "%ld"
 formatscanf: .asciz "%ld"
 newline: .asciz "\n"
-sir: .space 11
+sir: .space 80
 bin: .long 2
 count: .long 0
 textscanf: .asciz "%s"
