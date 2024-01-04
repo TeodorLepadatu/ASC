@@ -300,6 +300,9 @@ for_lines:
 		jmp for_lines
 
 et_exit:
+pushl $0
+call fflush
+pop %ebx
 movl $1, %eax
 xorl %ebx, %ebx
 int $0x80
