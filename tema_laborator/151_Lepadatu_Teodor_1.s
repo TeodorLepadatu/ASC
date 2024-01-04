@@ -1027,6 +1027,9 @@ movl $1, %ebx
 movl $newline, %ecx
 movl $2, %edx
 int $0x80
+pushl $0
+call fflush
+pop %ebx
 movl $1, %eax
 xorl %ebx, %ebx
 int $0x80
